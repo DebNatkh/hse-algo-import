@@ -32,4 +32,4 @@ if __name__ == '__main__':
                     if "clang" in new_submit:
                         new_submit += ".cpp"
                     added_problems.add(prob)
-                    shutil.move(os.path.join(args.input, participant, submit), os.path.join(args.output, prob, new_submit))
+                    shutil.copy(os.path.join(args.input, participant, submit), os.path.join(args.output, prob, new_submit))
